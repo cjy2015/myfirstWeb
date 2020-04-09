@@ -1,12 +1,14 @@
 ﻿        // 객체 만들기
         var Links = {
             setColor: function (color) {
-                var alist = document.querySelectorAll('a');
+               /* var alist = document.querySelectorAll('a');
                 var len = alist.length;
                 var i = 0;
                 for (i = 0; i != len; i++) {
                     alist[i].style.color = color;
-                }
+                } */
+                // jQuery 이용하기
+                $('a').css('color', color);
             }
         };
 
